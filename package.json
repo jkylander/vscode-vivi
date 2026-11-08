@@ -1,10 +1,10 @@
 {
   "name": "vivi",
   "displayName": "vivi",
-  "publisher": "JulianKylander, Xansidev",
+  "publisher": "JulianKylander",
   "repository": "https://github.com/jkylander/vscode-vivi",
   "description": "Vivi Script",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "icon": "icons/vivi-dark.png",
   "engines": {
     "vscode": "^1.125.0"

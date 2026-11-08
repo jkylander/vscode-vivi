@@ -186,6 +186,11 @@
           "match": "\\b(now|dt|dateTime|getTime|getDay|getMonth|getYear|formatDate)\\b(?=\\s*\\()"
         },
         {
+          "comment": "Json library",
+          "name": "support.function.library.vivi",
+          "match": "\\b(json_parse|json_parse_strict|json_error|json_stringify|json_pretty|json_quote)\\b(?=\\s*\\()"
+        },
+        {
           "comment": "Strings library",
           "name": "support.function.library.vivi",
           "match": "\\b(index_of|is_digit|has_prefix|has_suffix|contains|substring|split|join|replace|trim|to_upper|to_lower|reverse|to_pascal_case|to_camel_case|to_snake_case)\\b(?=\\s*\\()"

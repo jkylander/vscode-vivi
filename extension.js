@@ -38,6 +38,10 @@ const MODULES = {
     'program_start', 'now()', 'dt()', 'dateTime(t, tz)', 'getTime(t, tz, is24h)',
     'getMonth(i)', 'getDay(d, m, y)', 'getYear(y)', 'formatDate(day, month, year)',
   ],
+  Json: [
+    'json_parse(text)', 'json_parse_strict(text)', 'json_error()',
+    'json_stringify(v)', 'json_pretty(v, indent)', 'json_quote(s)',
+  ],
 };
 
 // Always available: _base.vivi + core/reflection/raw builtins
@@ -67,7 +71,7 @@ const TYPES = [
   'bool', 'string', 'rune', 'int', 'float', 'void',
 ];
 const DIRECTIVES = [
-  ['#import', '#import "${1|Strings,Math,Io,Sys,Time|}"', 'Import a module'],
+  ['#import', '#import "${1|Strings,Math,Io,Sys,Time,Json|}"', 'Import a module'],
   ['#phrase', '#phrase ${1:name} :: (${2:cond}, block ${3:body}) {\n\t$0\n}', 'Grammar extension (top level only)'],
   ['#method', '#method ${1:i32} ${2:name} :: () {\n\t$0\n}', 'Method chained onto a value'],
   ['#proctime', '#proctime ', 'Compile-time (proctime) code'],
